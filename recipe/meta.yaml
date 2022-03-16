@@ -43,6 +43,8 @@ about:
   license_file: COPYING
   summary: |
     GNU Triangulated Surface Library
+  dev_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
+  doc_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
 
 extra:
   recipe-maintainers:
