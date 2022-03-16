@@ -39,8 +39,9 @@ test:
 
 about:
   home: http://gts.sourceforge.net/
-  license: LGPL-2.0-or-later
+  license: GPL verision 2
   license_file: COPYING
+  license_family: GPL2
   summary: |
     GNU Triangulated Surface Library
   dev_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
