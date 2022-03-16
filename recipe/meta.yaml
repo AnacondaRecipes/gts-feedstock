@@ -34,7 +34,6 @@ requirements:
   host:
     - glib
 
-
 test:
   commands:
     - test -f ${PREFIX}/lib/libgts.so  # [linux]
