@@ -1,12 +1,9 @@
-{% set name = "gts" %}
-{% set version = "0.7.6" %}
-
 package:
-  name: {{ name }}
-  version: {{ version }}
+  name: gts
+  version: 0.7.6
 
 source:
-  - url: http://downloads.sourceforge.net/gts/gts-{{ version }}.tar.gz
+  - url: http://iweb.dl.sourceforge.net/project/gts/gts/0.7.6/gts-0.7.6.tar.gz
     sha256: 059c3e13e3e3b796d775ec9f96abdce8f2b3b5144df8514eda0cc12e13e8b81e
     patches:
       - config.in.win32.patch
@@ -17,7 +14,7 @@ build:
   number: 3
   skip: True    # [win32]
   run_exports:
-    - {{ pin_subpackage(name, max_pin='x.x') }}
+    - {{ pin_subpackage('gts', max_pin='x.x') }}
 
 requirements:
   build:
