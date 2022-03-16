@@ -15,6 +15,7 @@ source:
 
 build:
   number: 3
+  skip: True    # [win32]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
