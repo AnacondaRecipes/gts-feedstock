@@ -39,9 +39,9 @@ test:
 
 about:
   home: http://gts.sourceforge.net/
-  license: GPL version 2
+  license: LGPL-2.0-or-later
   license_file: COPYING
-  license_family: GPL2
+  license_family: LGPL
   summary: GNU Triangulated Surface Library
   description: |
     GTS stands for the GNU Triangulated Surface Library. It is an Open Source
