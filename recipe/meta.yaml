@@ -42,8 +42,15 @@ about:
   license: GPL verision 2
   license_file: COPYING
   license_family: GPL2
-  summary: |
-    GNU Triangulated Surface Library
+  summary: GNU Triangulated Surface Library
+  description: |
+    GTS stands for the GNU Triangulated Surface Library. It is an Open Source
+    Free Software Library intended to provide a set of useful functions to
+    deal with 3D surfaces meshed with interconnected triangles. The code is
+    written entirely in C with an object-oriented approach based mostly on
+    the design of GTK+. Careful attention is paid to performance related
+    issues as the initial goal of GTS is to provide a simple and efficient
+    library to scientists dealing with 3D computational surface meshes.
   dev_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
   doc_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
 
