@@ -1,9 +1,12 @@
+{% set name = "gts" %}
+{% set version = "0.7.6" %}
+
 package:
-  name: gts
-  version: 0.7.6
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  - url: https://fossies.org/linux/privat/old/gts-0.7.6.tar.gz
+  - url: https://downloads.sourceforge.net/project/gts/gts/{{ version }}/gts-{{ version }}.tar.gz
     sha256: 059c3e13e3e3b796d775ec9f96abdce8f2b3b5144df8514eda0cc12e13e8b81e
     patches:
       - config.in.win32.patch
@@ -19,9 +22,9 @@ build:
 requirements:
   build:
     - gnuconfig  # [unix]
-    - {{ compiler('cxx') }}  # [not win]
-    - {{ compiler('c') }}    # [not win]
-    - vs2017_win-64          # [win]
+    - {{ stdlib('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - cmake       # [win]
     - ninja       # [win]
     - make        # [not win]
