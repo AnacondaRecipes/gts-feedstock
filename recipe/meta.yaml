@@ -30,7 +30,7 @@ requirements:
     - make        # [not win]
     - pkg-config  # [not win]
   host:
-    - glib
+    - glib {{ glib }}
 
 test:
   commands:
@@ -39,7 +39,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\\bin\\gts.dll exit 1  # [win]
 
 about:
-  home: http://gts.sourceforge.net/
+  home: https://gts.sourceforge.net/
   license: LGPL-2.0-or-later
   license_file: COPYING
   license_family: LGPL
@@ -52,8 +52,8 @@ about:
     the design of GTK+. Careful attention is paid to performance related
     issues as the initial goal of GTS is to provide a simple and efficient
     library to scientists dealing with 3D computational surface meshes.
-  dev_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
-  doc_url: http://gerris.dalembert.upmc.fr/darcs/gts-stable/
+  dev_url: https://gerris.dalembert.upmc.fr/darcs/gts-stable/
+  doc_url: https://gerris.dalembert.upmc.fr/darcs/gts-stable/
 
 extra:
   recipe-maintainers:
