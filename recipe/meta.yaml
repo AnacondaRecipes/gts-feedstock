@@ -29,8 +29,6 @@ requirements:
     - ninja       # [win]
     - make        # [not win]
     - pkg-config  # [not win]
-    - patch       # [not win]
-    - m2-patch    # [win]
   host:
     - glib
 
