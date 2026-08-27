@@ -14,8 +14,7 @@ source:
   - path: CMakeLists.txt
 
 build:
-  number: 3
-  skip: True    # [win32]
+  number: 4
   run_exports:
     - {{ pin_subpackage('gts', max_pin='x.x') }}
 
